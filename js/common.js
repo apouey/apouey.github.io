@@ -230,6 +230,8 @@ if (annyang) {
 
   };
 
+  annyang.setLanguage('fr-FR');
+  
   // Add our commands to annyang
   annyang.addCommands(commands);
 
