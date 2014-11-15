@@ -208,7 +208,7 @@ if (annyang) {
 
   var commands = {
     'aide': function(){ soundhelp(); },
-    'merci': function(){ soundhelpClose(); },
+    'merci': function(){ $('.close_help').click(); },
     'contact (you)': function() { $('.tel_me').click(); },
     'fermer': function(){ $('.tip_close,.tip_area_close,.r5 tip_area_close').click(); },
     'imprimer': function(){ $('.button_print').click(); },
