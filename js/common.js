@@ -204,6 +204,9 @@ function byebye(){
 }
 
 //sound
+//product 1 (volcom)
+//product 2 (label-park)
+//product 3 (ffgolf)
 if (annyang) {
 
   var commands = {
@@ -213,29 +216,20 @@ if (annyang) {
     'fermer': function(){ $('.tip_close,.tip_area_close,.r5 tip_area_close').click(); },
     'imprimer': function(){ $('.button_print').click(); },
     'travaux': function(){ $('.product_1').click(); },
+    'projets': function(){ $('.product_1').click(); },
     'précédent': function(){ $('.carousel-control.left').click(); },
     'suivant': function(){ $('.carousel-control.right').click(); },
     'haut': function(){ $('.carousel-control.left').click(); },
     'bas': function(){ $('.carousel-control.right').click(); },
-
-    //product
     '(projet) 1': function(){ $('.product_1').click(); },
     '(projet) 2': function(){ $('.product_2').click(); },
     '(projet) 3': function(){ $('.product_3').click(); },
-    '(projet) 4': function(){ $('.product_4').click(); },
-    '(projet) 5': function(){ $('.product_5').click(); },
-    '(projet) plus': function(){ $('.btn_more').click(); },
-
     'au revoir': function(){ byebye(); }
 
   };
 
   annyang.setLanguage('fr-FR');
-
-  // Add our commands to annyang
   annyang.addCommands(commands);
-
-  // Start listening.
   annyang.start();
 
 }
