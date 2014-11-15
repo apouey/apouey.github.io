@@ -208,9 +208,9 @@ if (annyang) {
 
   var commands = {
     'aide': function(){ soundhelp(); },
-    'fermer aide': function(){ soundhelpClose(); },
+    'merci': function(){ soundhelpClose(); },
     'contact (you)': function() { $('.tel_me').click(); },
-    'fermer': function(){ $('.tip_close,.tip_area_close').click(); },
+    'fermer': function(){ $('.tip_close,.tip_area_close,.r5 tip_area_close').click(); },
     'imprimer': function(){ $('.button_print').click(); },
     'travaux': function(){ $('.product_1').click(); },
     'précédent': function(){ $('.carousel-control.left').click(); },
@@ -231,7 +231,7 @@ if (annyang) {
   };
 
   annyang.setLanguage('fr-FR');
-  
+
   // Add our commands to annyang
   annyang.addCommands(commands);
 
